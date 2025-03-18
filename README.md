@@ -1,124 +1,110 @@
-# 📦 Curslo String Utilities
+# 📜 Curslo String Utilities
 
-Curslo String Utilities is a lightweight JavaScript package that provides essential string manipulation functions. It helps developers format, transform, and analyze strings easily.
+A simple utility package for string manipulations, now with **TypeScript support!** 🎉
 
-## 🚀 Features
-- ✅ **Capitalize**: Convert the first letter of a word to uppercase.
-- ✅ **Camel Case**: Convert text to camelCase format.
-- ✅ **Snake Case**: Convert text to snake_case format.
-- ✅ **Kebab Case**: Convert text to kebab-case format.
-- ✅ **Reverse String**: Reverse the characters in a string.
-- ✅ **Truncate String**: Shorten a string to a specified length.
-- ✅ **Palindrome Check**: Determine if a word is a palindrome.
+---
 
-## 📥 Installation
+## 📦 Installation
+
+You can install this package via **npm** or **yarn** or **pnpm**:
 
 ```sh
 npm install curslo-string-utilities
 ```
 
-or with Yarn:
+or  
 
 ```sh
 yarn add curslo-string-utilities
 ```
 
-or with pnpm:
+or
 
 ```sh
 pnpm add curslo-string-utilities
 ```
 
-## 📖 Usage
-
-### **Import the Package**
-```js
-const {
-  capitalize,
-  toCamelCase,
-  toSnakeCase,
-  toKebabCase,
-  reverseString,
-  truncateString,
-  isPalindrome
-} = require("curslo-string-utilities");
-```
-
 ---
 
-### **🔹 Available Functions**
+## 🚀 Usage
 
-#### **1️⃣ Capitalize**
-Converts the first letter of a string to uppercase.
+### For JavaScript Users
+
+Use **CommonJS** `require()`:
 
 ```js
+const { capitalize, toCamelCase } = require("curslo-string-utilities");
+
 console.log(capitalize("hello")); // "Hello"
+console.log(toCamelCase("hello world")); // "helloWorld"
 ```
 
 ---
 
-#### **2️⃣ Convert to Camel Case**
-Transforms a string into camelCase.
+### For TypeScript Users
 
-```js
-console.log(toCamelCase("hello world example")); // "helloWorldExample"
+Use **ES Module Imports**:
+
+```ts
+import { capitalize, toCamelCase } from "curslo-string-utilities";
+
+console.log(capitalize("hello")); // "Hello"
+console.log(toCamelCase("hello world")); // "helloWorld"
 ```
 
 ---
 
-#### **3️⃣ Convert to Snake Case**
-Transforms a string into snake_case.
+## 🔧 Available Functions
 
-```js
-console.log(toSnakeCase("hello world example")); // "hello_world_example"
-```
-
----
-
-#### **4️⃣ Convert to Kebab Case**
-Transforms a string into kebab-case.
-
-```js
-console.log(toKebabCase("hello world example")); // "hello-world-example"
-```
+| Function        | Description |
+|----------------|-------------|
+| `capitalize(str: string): string` | Capitalizes the first letter of a string. |
+| `toCamelCase(str: string): string` | Converts a string to camelCase. |
+| `toSnakeCase(str: string): string` | Converts a string to snake_case. |
+| `toKebabCase(str: string): string` | Converts a string to kebab-case. |
+| `reverseString(str: string): string` | Reverses a given string. |
+| `truncateString(str: string, length: number): string` | Truncates a string and adds "..." if it exceeds the specified length. |
+| `isPalindrome(str: string): boolean` | Checks if a string is a palindrome. |
 
 ---
 
-#### **5️⃣ Reverse a String**
-Reverses the characters in a string.
+## 🔨 Development
 
-```js
-console.log(reverseString("hello")); // "olleh"
-```
+If you want to contribute or modify this package:
 
----
-
-#### **6️⃣ Truncate a String**
-Shortens a string to a specified length.
-
-```js
-console.log(truncateString("hello world", 5)); // "hello..."
-```
-
----
-
-#### **7️⃣ Check if a String is a Palindrome**
-Determines whether a given word or phrase is a palindrome.
-
-```js
-console.log(isPalindrome("madam")); // true
-console.log(isPalindrome("hello")); // false
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Curslo/curslo-string-utilities.git
+   cd curslo-string-utilities
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Build the package:
+   ```sh
+   npm run build
+   ```
+4. Run tests:
+   ```sh
+   npm test
+   ```
 
 ---
 
-## 🛠️ Contributing
-Contributions are welcome! If you find a bug or have an improvement suggestion, feel free to open an issue or submit a pull request.
+## 📢 Changelog
+
+- **v2.0.0** (Latest)
+  - **Converted to TypeScript** for better type safety.
+  - Updated package exports for **ES Module & CommonJS compatibility**.
+- **v1.1.5**  
+  - Initial release with string utility functions.
+
+---
 
 ## 📜 License
-This project is licensed under the MIT License.
+
+This project is licensed under the **MIT License**.
 
 ---
-🔗 **GitHub Repo**: [Curslo String Utilities](https://github.com/Curslo/curslo-string-utility.git)  
-📦 **npm Package**: [curslo-string-utilities](https://www.npmjs.com/package/curslo-string-utilities)
 
