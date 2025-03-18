@@ -12,8 +12,5 @@
   ],
   "author": "Richard Kisivii",
   "license": "MIT",
-  "description": "",
-  "dependencies": {
-    "curslo-string-utilities": "^1.0.0"
-  }
+  "description": " A simple utility library for string manipulation"
 }
