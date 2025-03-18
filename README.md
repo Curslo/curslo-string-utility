@@ -119,6 +119,6 @@ Contributions are welcome! If you find a bug or have an improvement suggestion, 
 This project is licensed under the MIT License.
 
 ---
-🔗 **GitHub Repo**: [Curslo String Utilities](https://github.com/Curslo/curslo-string-utility)  
+🔗 **GitHub Repo**: [Curslo String Utilities](https://github.com/Curslo/curslo-string-utility.git)  
 📦 **npm Package**: [curslo-string-utilities](https://www.npmjs.com/package/curslo-string-utilities)
 
