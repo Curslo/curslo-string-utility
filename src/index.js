@@ -12,9 +12,11 @@ function toCamelCase(str) {
     .replace(/\s+/g, "");
 }
 
+
 function toSnakeCase(str) {
   return str.toLowerCase().replace(/\s+/g, "_");
 }
+
 
 function toKebabCase(str) {
   return str.toLowerCase().replace(/\s+/g, "-");
