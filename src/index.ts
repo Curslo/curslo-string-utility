@@ -36,7 +36,7 @@ function isPalindrome(str: string): boolean {
   return cleaned === cleaned.split("").reverse().join("");
 }
 
-const strUtils = {
+export{
   capitalize,
   toCamelCase,
   toSnakeCase,
@@ -46,4 +46,3 @@ const strUtils = {
   isPalindrome,
 };
 
-export default strUtils;
