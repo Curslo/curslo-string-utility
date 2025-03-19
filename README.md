@@ -214,7 +214,7 @@ This project is licensed under the **MIT License**.
 
 ## 📢 Changelog
 
-- **v2.1.1** (Latest)
+- **v2.1.2** (Latest)
   - **Converted to TypeScript** for better type safety.
   - Updated package exports for **ES Module & CommonJS compatibility**.
   - Added more string utilities
