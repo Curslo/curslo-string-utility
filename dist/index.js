@@ -1,5 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.capitalize = capitalize;
+exports.toCamelCase = toCamelCase;
+exports.toSnakeCase = toSnakeCase;
+exports.toKebabCase = toKebabCase;
+exports.reverseString = reverseString;
+exports.truncateString = truncateString;
+exports.isPalindrome = isPalindrome;
 function capitalize(word) {
     if (typeof word !== "string")
         return "";
@@ -29,13 +36,3 @@ function isPalindrome(str) {
     const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, "");
     return cleaned === cleaned.split("").reverse().join("");
 }
-const strUtils = {
-    capitalize,
-    toCamelCase,
-    toSnakeCase,
-    toKebabCase,
-    reverseString,
-    truncateString,
-    isPalindrome,
-};
-exports.default = strUtils;
