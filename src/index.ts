@@ -12,11 +12,9 @@ function toCamelCase(str: string): string {
     .replace(/\s+/g, "");
 }
 
-
 function toSnakeCase(str: string): string {
   return str.toLowerCase().replace(/\s+/g, "_");
 }
-
 
 function toKebabCase(str: string): string {
   return str.toLowerCase().replace(/\s+/g, "-");
@@ -48,9 +46,7 @@ function countWords(str: string): number {
 
 function toTitleCase(str: string): string {
   if (typeof str !== "string") throw new Error("Input must be a string");
-  return str
-    .toLowerCase()
-    .replace(/\b\w/g, (char) => char.toUpperCase());
+  return str.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 function maskString(str: string, numChars: number = 4): string {
@@ -63,7 +59,8 @@ function randomString(length: number): string {
   if (typeof length !== "number" || length < 1)
     throw new Error("Length must be a positive number");
 
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const chars =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let result = "";
   for (let i = 0; i < length; i++) {
     result += chars.charAt(Math.floor(Math.random() * chars.length));
@@ -71,7 +68,7 @@ function randomString(length: number): string {
   return result;
 }
 
-export{
+export {
   capitalize,
   toCamelCase,
   toSnakeCase,
@@ -83,6 +80,5 @@ export{
   countWords,
   toTitleCase,
   maskString,
-  randomString
+  randomString,
 };
-
