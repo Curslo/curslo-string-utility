@@ -1,28 +1,32 @@
-## Curslo String Utilities
+# Curslo String Utilities
 
 A lightweight utility package for string manipulations in JavaScript and TypeScript.
+
+---
 
 ## 🚀 Installation
 
 Install via npm, yarn or pnpm:
 
-```sh
+```js
 npm install curslo-string-utilities
 ```
 
-# OR yarn
+ OR yarn
 
-```sh
+```js
 yarn add curslo-string-utilities
 ```
 
-# OR pnpm
+ OR pnpm
 
-```sh
+```js
 pnpm add curslo-string-utilities
 ```
 
-# 📖 Usage
+---
+
+## 📖 Usage
 
 Import the package in your JavaScript or TypeScript project:
 
@@ -43,7 +47,7 @@ const {
 } = require("curslo-string-utilities");
 ```
 
-# // OR in TypeScript:
+OR in TypeScript:
 
 ```ts
 import {
@@ -62,9 +66,11 @@ import {
 } from "curslo-string-utilities";
 ```
 
+---
+
 ## 🔥 Functions & Examples
 
-# 1️⃣ capitalize(word)
+**1️⃣ capitalize(word)**
 
 Converts the first letter of a word to uppercase.
 
@@ -72,7 +78,7 @@ Converts the first letter of a word to uppercase.
 console.log(capitalize("hello world")); // "Hello world"
 ```
 
-# 2️⃣ toCamelCase(str)
+**2️⃣ toCamelCase(str)**
 
 Converts a string to camelCase.
 
@@ -80,7 +86,7 @@ Converts a string to camelCase.
 console.log(toCamelCase("hello world")); // "helloWorld"
 ```
 
-# 3️⃣ toSnakeCase(str)
+**3️⃣ toSnakeCase(str)**
 
 Converts a string to snake_case.
 
@@ -88,7 +94,7 @@ Converts a string to snake_case.
 console.log(toSnakeCase("hello world")); // "hello_world"
 ```
 
-# 4️⃣ toKebabCase(str)
+**4️⃣ toKebabCase(str)**
 
 Converts a string to kebab-case.
 
@@ -96,7 +102,7 @@ Converts a string to kebab-case.
 console.log(toKebabCase("hello world")); // "hello-world"
 ```
 
-# 5️⃣ reverseString(str)
+**5️⃣ reverseString(str)**
 
 Reverses the given string.
 
@@ -104,7 +110,7 @@ Reverses the given string.
 console.log(reverseString("hello")); // "olleh"
 ```
 
-# 6️⃣ truncateString(str, length)
+**6️⃣ truncateString(str, length)**
 
 Truncates a string to a given length and adds "..." at the end.
 
@@ -112,7 +118,7 @@ Truncates a string to a given length and adds "..." at the end.
 console.log(truncateString("Hello World", 5)); // "Hello..."
 ```
 
-# 7️⃣ isPalindrome(str)
+**7️⃣ isPalindrome(str)**
 
 Checks if a string is a palindrome.
 
@@ -121,7 +127,7 @@ console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("hello")); // false
 ```
 
-# 8️⃣ removeWhitespace(str)
+**8️⃣ removeWhitespace(str)**
 
 Removes all whitespace from a string.
 
@@ -129,7 +135,7 @@ Removes all whitespace from a string.
 console.log(removeWhitespace("Hello World")); // "HelloWorld"
 ```
 
-# 9️⃣ countWords(str)
+**9️⃣ countWords(str)**
 
 Counts the number of words in a string.
 
@@ -137,7 +143,7 @@ Counts the number of words in a string.
 console.log(countWords("This is a test")); // 4
 ```
 
-# 🔟 toTitleCase(str)
+**🔟 toTitleCase(str)**
 
 Converts a string to title case.
 
@@ -145,7 +151,7 @@ Converts a string to title case.
 console.log(toTitleCase("hello world")); // "Hello World"
 ```
 
-# 1️⃣1️⃣ maskString(str, visibleChars = 4)
+**1️⃣1️⃣ maskString(str, visibleChars = 4)**
 
 Masks all but the last visibleChars characters in a string.
 
@@ -154,7 +160,7 @@ console.log(maskString("1234567890")); // "**\*\***7890"
 console.log(maskString("secretPassword", 3)); // "\***\*\*\*\*\*\*\***ord"
 ```
 
-# 1️⃣2️⃣ randomString(length)
+**1️⃣2️⃣ randomString(length)**
 
 Generates a random alphanumeric string of the given length.
 
@@ -162,13 +168,17 @@ Generates a random alphanumeric string of the given length.
 console.log(randomString(8)); // Example output: "A1B2C3D4"
 ```
 
-# ✅ Testing
+---
+
+## ✅ Testing
 
 Run tests using Jest:
 
-```sh
+```js
 npm test
 ```
+
+---
 
 ## 👨‍💻 Contributing
 
@@ -177,6 +187,8 @@ Contributions are welcome!
 Fork the repository
 Make your changes
 Open a pull request
+
+---
 
 ## 🔨 Development
 
@@ -199,6 +211,7 @@ If you want to contribute or modify this package:
    ```sh
    npm test
    ```
+   ---
 
 ## 🌟 Support
 
@@ -214,7 +227,7 @@ This project is licensed under the **MIT License**.
 
 ## 📢 Changelog
 
-- **v2.1.2** (Latest)
+- **v2.1.3** (Latest)
   - **Converted to TypeScript** for better type safety.
   - Updated package exports for **ES Module & CommonJS compatibility**.
   - Added more string utilities
